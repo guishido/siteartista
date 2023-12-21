@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Karla:wght@200&display=swap');
 
-
 body {
     background: url('/styles/img/musica.jpg') no-repeat center center fixed;
     background-size: cover; /* ajusta o tamanho da imagem */
@@ -10,33 +9,4 @@ body {
     font-family: 'Karla', sans-serif;
     background-repeat: no-repeat;
     background-color: black;
-}
-
-.navbar-nav .nav-link.active {
-    color: #ffffff !important;
-}
-
-header > ul > li > a {
-    color: white !important;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #c9c9c9 !important;
-}
-
-.texto{
-    color: black !important;
-}
-
-.color-icone{
-    color: white !important;
-}
-
-.footer-img{
-    margin: 0 auto;
-}
-
-.text-bold{
-    font-weight: bolder;
-    color: black;
 }
