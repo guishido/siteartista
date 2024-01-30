@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Karla:wght@200&display=swap');
 
-
 body {
     background: url('/styles/img/wallpaper.png') no-repeat center center fixed;
     background-size: cover; /* ajusta o tamanho da imagem */
@@ -12,3 +11,6 @@ body {
     background-color: black;
 }
 
+.font-white{
+    color: white;
+}
