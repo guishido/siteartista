@@ -14,3 +14,10 @@ body {
 .font-white{
     color: white;
 }
+
+.whats{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
