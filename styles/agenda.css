@@ -18,79 +18,118 @@ body {
     z-index: 999;
 }
 
-.agenda {
+ 
+ .container-line {
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .container-line:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
+ }
+ 
+ .timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
     align-items: center;
-    min-height: 100vh;
-    color: #ededed;
-    text-align: center;
-    margin-top: -5rem;
-    margin-bottom: 5rem;
-    
-}
-
-.show {
-    margin-bottom: 20px;
-    
-}
-
-.agenda h1 {
-    font-size: 36px;
+ }
+ 
+ .timeline-block-right {
+    float: right;
+ }
+ 
+ .timeline-block-left {
+    float: left;
+    direction: rtl
+ }
+ 
+ .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #4FC1E9;
+    margin-top: 10px;
+    z-index: 9999
+ }
+ 
+ .timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: #666
+ }
+ 
+ .timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500
+ }
+ 
+ .timeline-content span {
+    font-size: 15px;
     color: #ffffff;
-    margin-bottom: 20px;
-    background-color: #97431f;
-    padding: 15px;
-    border-radius: 25px;
-}
-
-.agenda p.text {
+ }
+ 
+ .timeline-content p {
     font-size: 14px;
-    color: #000000;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #f5f5f5;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: white;
+ }
 
-.textohorario{
-    color:#000000;
-    text-decoration: none;  
-}
+ .titulo-agenda{
+    color: white;
+ }
 
-.show .data {
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #C25A16;
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-.show .cidade {
-    font-size: 18px;
-    margin-top: 0.1rem;
-    color: #000000;
-    background-color: #ffffff;
-    padding: 10px;
-    border: 0.3px solid #00244d;
-    display: inline-block;
-    border-radius: 8px;
-    
-}
-.show .cidade:hover{
-    background-color: #b4b4b4;
-}
-
-.ingresso {
-    font-size: 14px;
-    color: #ffffff;
+.link-agenda{
     text-decoration: none;
-    
-    
+    text-shadow: 1px 1px 3px black;
 }
 
-.ingresso:hover {
-    text-decoration: underline;
+.font-white{
+    color: white;
+    font-weight: bolder;
 }
+ 
+ 
+ @media screen and (max-width: 768px) {
+    .container:before {
+       left: 8px;
+       width: 2px;
+    }
+    .timeline-block {
+       width: 100%;
+       margin-bottom: 30px;
+    }
+    .timeline-block-right {
+       float: none;
+    }
+ 
+    .timeline-block-left {
+       float: none;
+       direction: ltr;
+    }
+ }
+ 
